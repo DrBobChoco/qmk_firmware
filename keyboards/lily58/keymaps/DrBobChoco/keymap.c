@@ -35,9 +35,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * | ESC  |  F1  |  F2  |  F3  |  F4  |  F5  |                    |  F6  |  F7  |  F8  |  F9  | F10  | F11  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | Tab  |      |      |      |      |      |                    |      |      |      |      |PrtScn| F12  |
+ * | Tab  |      | MS_3 | MS_2 | MS_1 | WH_U |                    |      |      |      |      |PrtScn| F12  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |LShift|      |      |      |      |      |-------.    ,-------| Left | Down |  Up  |Right |   ~  | PgUp |
+ * |LShift|      |      |      |      | WH_D |-------.    ,-------| Left | Down |  Up  |Right |   ~  | PgUp |
  * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
  * |LCTRL |      |      |      |      |      |-------|    |-------|      |      |      |      |      | PgDn |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
@@ -47,8 +47,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_LOWER] = LAYOUT( \
   _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11, \
-  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PSCR, KC_F12,\
-  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_TILD, KC_PGUP, \
+  _______, XXXXXXX, KC_BTN3, KC_BTN2, KC_BTN1, KC_WH_U,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PSCR, KC_F12,\
+  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_WH_D,                   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_TILD, KC_PGUP, \
   _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PGDN, \
                              _______, _______, _______, _______, _______,  _______, _______, KC_DEL\
 ),
@@ -57,9 +57,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.                    ,-----------------------------------------.
  * | ESC  |  F1  |  F2  |  F3  |  F4  |  F5  |                    |  F6  |  F7  |  F8  |  F9  | F10  | F11  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | Tab  |      |      |      |      |      |                    |      |      |      |      |      | F12  |
+ * | Tab  |      |      |      |      | WH_U |                    |      | MS_1 | MS_2 | MS_3 |      | F12  |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |LShift|      |      |      |      |      |-------.    ,-------| Play |VolDn |VolUp | Next |   `  | Home |
+ * |LShift|      |      |      |      | WH_D |-------.    ,-------| Play |VolDn |VolUp | Next |   `  | Home |
  * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
  * |LCTRL |      |      |      |      |      |-------|    |-------|      |      |      |      |      | End  |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
@@ -69,8 +69,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_RAISE] = LAYOUT( \
   _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11, \
-  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_F12,\
-  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   KC_MPLY, KC_VOLD, KC_VOLU, KC_MNXT, KC_GRV,  KC_HOME, \
+  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_WH_U,                   XXXXXXX, KC_BTN1, KC_BTN2, KC_BTN3, XXXXXXX, KC_F12,\
+  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_WH_D,                   KC_MPLY, KC_VOLD, KC_VOLU, KC_MNXT, KC_GRV,  KC_HOME, \
   _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_END, \
                              _______, _______, _______,  _______, _______,  _______, _______, _______ \
 ),
