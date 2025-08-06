@@ -61,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |LShift|      |      |      |      | WH_D |-------.    ,-------| Play |VolDn |VolUp | Next |   `  | Home |
  * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
- * |LCTRL |      |      |      |      |      |-------|    |-------|      |      |      |      |      | End  |
+ * |LCTRL |      |      |      |      |      |-------|    |-------|      | Left | Down |  Up  |Right | End  |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   | LGUI | LAlt |LOWER | /Space  /       \Enter \  |RAISE |Insert|BackSP|
  *                   |      |      |      |/       /         \      \ |      |      |      |
@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11, \
   _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_WH_U,                   XXXXXXX, KC_BTN1, KC_BTN2, KC_BTN3, XXXXXXX, KC_F12,\
   _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_WH_D,                   KC_MPLY, KC_VOLD, KC_VOLU, KC_MNXT, KC_GRV,  KC_HOME, \
-  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_END, \
+  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_END, \
                              _______, _______, _______,  _______, _______,  _______, _______, _______ \
 ),
 
